@@ -26,7 +26,7 @@ phases:
    commands:
      - echo Build started on `date`
      - echo Installing composer deps
-     - composer install
+     - sudo apt install composer
      - touch database/database.sqlite
      - php artisan migrate --database=sqlite --force
 
